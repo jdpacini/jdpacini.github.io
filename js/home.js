@@ -73,10 +73,13 @@ window.addEventListener('scroll', function(event) {
       let type = $this.attr('data-type');
       let countTo;
 
-      let multiplier = new Date().getFullYear() - 2020;
+      let multiplier = new Date().getFullYear() - 2019;
+      let month = new Date().getMonth() + 1;
       let years = 35 + multiplier;
-      let clients = 15048 + multiplier * 429;
-      let repairs = 2050012 + multiplier * 320452
+      let clients = 5048 + multiplier / month  * 29;
+      clients = clients.toFixed(0);
+      let repairs = 2050012 + multiplier / month * 320452
+      repairs = repairs.toFixed(0);
 
       switch (type) {
         case 'years':
@@ -151,32 +154,26 @@ window.addEventListener('scroll', function(event) {
 
 // while (true) {
 
-loop();
+// loop();
 
-function loop() {
+// function loop() {
 
-  let text = document.querySelector('.hero.home .title span');
-  let options = ['Specialists', 'Technicians', 'Consultants', 'Ninjas'];
+//   let text = document.querySelector('.hero.home .title span');
+//   let options = ['Specialists', 'Technicians', 'Consultants'];
 
-  let i = 0;
-  text.style.opacity = 0;
-  changeText();
-  let interval = setInterval(changeText, 5000);
+//   let i = 0;
+//   changeText();
+//   let interval = setInterval(changeText, 6000);
 
-  function changeText() {
-    if (i === options.length) {
-      clearInterval(interval);
-      loop();
-    } else {
-      text.textContent = options[i];
-      text.style.opacity = 1;
-      setTimeout(function() {
-        text.style.opacity = 0;
-      }, 3000);
+//   function changeText() {
+//     if (i === options.length) {
+//       clearInterval(interval);
+//       loop();
+//     } else {
+//       text.textContent = options[i];
+//       i++;
+//     }
 
-      i++;
-    }
-
-  }
-}
+//   }
+// }
 

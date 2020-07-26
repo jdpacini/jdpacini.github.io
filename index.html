@@ -55,11 +55,11 @@
   <title>Sercom</title>
 
   <!-- global stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/global.css">
 
   <!-- local stylesheets -->
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="./css/home.css">
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -67,7 +67,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&amp;display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -86,21 +86,22 @@
     <nav>
       <div class='logo'>
         <a href="/">
-          <div>
-            <img src='./assets/images/global/sercom-logo.svg' alt='Sercom logo'>
+          <span class='home-link'>
+            <img src='./assets/images/global/sercom-logo-dark.svg' alt='Sercom logo'>
             <h1>Sercom</h1>
-          </div>
+          </span>
           <h2 class='subtitle'>Scientific Equipment Repair Company</h2>
         </a>
       </div>
 
       <div>
-        <a href='/about.html'>About</a>
-        <a href='/services.html'>Services</a>
-        <a href='/products.html'>Products</a>
-      </div>
-      <div class='contact-links'>
-        <a href='tel:9704828410' class=' button solid'>(970) 482-8410</a>
+          <span class='nav-links'>
+              <a href='./about.html'>About</a>
+              <a href='./services.html'>Services</a>
+              <a href='./products.html'>Products</a>
+              <a href='#contact'>Contact</a>
+          </span>
+        <a href='tel:9704828410' class='button solid'>(970) 482-8410</a>
         <!-- <a href='#contact' class=' button solid contact'>Get a quote</a> -->
       </div>
     </nav>
@@ -114,14 +115,20 @@
   </div>
 
   <section class='hero home'>
+ 
     <div class='group'>
-      <h1 class='title'>Scientific <br> Equipment <br> <span></span></h1>
+      <h1 class='title'>Scientific Equipment <span>Specialists</span></h1>
       <h2 class='subtitle sm-padding-b'>Unparalleled expertise repairing, maintaining and calibrating
         biomedical and high-tech industrial equipment.</h2>
       <div class='links sm-padding-tb'>
-        <a href='/about.html' class='solid dark button'>What we do</a>
+        <a href='./about.html' class='solid dark button'>What we do</a>
         <a href='#contact' class='solid button'>Get a quote</a>
       </div>
+    </div>
+    <div class='crossfade'>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
     </div>
   </section>
 
