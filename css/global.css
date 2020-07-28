@@ -33,8 +33,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--title-color);
-
 }
+
 
 a {
   text-decoration: none;
@@ -308,31 +308,36 @@ header .logo a div {
 }
 
 header .logo img {
-  height: 22px;
-  margin-right: 12px;
+  height: 20px;
   margin-left: 0px;
+  margin-right: 6px;
   transition: margin 0.2s, height 0.2s;
+  filter: grayscale(100) brightness(0);
 }
 
 header.home-header .logo img {
  filter: grayscale(100) brightness(100);
- height: 28px;
+ height: 26px;
  margin-left: 40px;
 }
 
 header .logo h1 {
-  font-size: 24px;
+  font-size: 22px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   color: var(--secondary);
+  letter-spacing: 0.5px;
+  /* font-family: 'Varela Round', sans-serif; */
+  /* font-weight: 100; */
 }
 
 header.home-header .logo h1 {
   color: var(--white);
   transform: scale(1.4);
-  font-weight: 100;
-  margin-left: 40px;
+  /* font-weight: 100; */
+  margin-left: 30px;
   letter-spacing: 1px;
+  /* font-family: 'Varela Round', sans-serif; */
 }
 
 header .logo .subtitle {
@@ -349,7 +354,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 header a {
@@ -435,28 +440,29 @@ footer .logo {
 }
 
 footer .logo img {
-  height: 20px;
+  height: 18px;
   margin-right: 6px;
-  margin-left: 20px;
   filter: grayscale(100) brightness(100);
 }
 
 footer .title {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 1;
   font-weight: 100;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   color: var(--white);
+  font-family: 'Varela Round', sans-serif;
 
 }
 
 footer .subtitle {
   font-size: 10px;
   font-weight: 300;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
+  color: var(--gray200);
 }
 
 footer .text {
@@ -559,11 +565,12 @@ footer .noco-designworks a {
 
 .menu {
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 6px;
+  right: 12px;
   z-index: 1000;
   display: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .menu .close {
@@ -588,7 +595,7 @@ footer .noco-designworks a {
 
 
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 950px) {
 /* *************************** Global *************************** */
   :root {
       --title-size: 32px;
@@ -599,15 +606,33 @@ footer .noco-designworks a {
 
 /* *************************** Header *************************** */
 
-  header {
+  header .links {
     display: none;
   }
 
-  header.show {
+  header {
+    padding: 0px 30px;
+    width: calc(100% - 60px);
+  }
+
+  header.home-header {
+    width: calc(100% - 60px);
+  }
+
+  header.home-header~.menu {
+    top: 30px;
+    right: 30px;
+  }
+
+  header.home-header .logo img {
+    margin-left: 0;
+  }
+  header.show .links {
     display: block;
   }
 
-  header nav {
+  header.show nav {
+    background: var(--secondary);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -618,20 +643,26 @@ footer .noco-designworks a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--white);
+
   }
 
-  header div:nth-child(2) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  header.show nav a {
+    margin: 16px 0;
+    color: var(--white);
   }
 
+
+  header a {
+    padding: 12px 0;
+
+  }
   header nav a {
     display: block;
     margin: 10px 0;
     padding: 10px 0;
   }
+
+
 
 
   .menu {
