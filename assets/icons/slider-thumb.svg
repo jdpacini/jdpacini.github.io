@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 21 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-3127,-5476)">
+        <g transform="matrix(1.36249,0,0,1,-2569.06,2945.03)">
+            <g id="slider-thumb" transform="matrix(0.952381,0,0,0.952381,199.095,120.522)">
+                <g transform="matrix(0.856276,0,0,0.729167,1464.03,-1384.66)">
+                    <path d="M3191,5382.96C3191,5375.81 3187.37,5370 3182.9,5370L3181.1,5370C3176.63,5370 3173,5375.81 3173,5382.96L3173,5429.04C3173,5436.19 3176.63,5442 3181.1,5442L3182.9,5442C3187.37,5442 3191,5436.19 3191,5429.04L3191,5382.96Z" style="fill:rgb(31,167,78);"/>
+                </g>
+                <g id="Menu--wide-" serif:id="Menu (wide)" transform="matrix(2.03079e-17,-0.451875,0.331654,2.76694e-17,3849.78,3344.84)">
+                    <g transform="matrix(1,0,0,1,151.3,-321)">
+                        <rect x="1569.7" y="1351" width="44" height="3" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,151.3,-320)">
+                        <rect x="1569.7" y="1340" width="44" height="3" style="fill:white;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,151.3,-319)">
+                        <rect x="1569.7" y="1329" width="44" height="3" style="fill:white;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

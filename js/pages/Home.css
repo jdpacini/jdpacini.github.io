@@ -1,0 +1,671 @@
+/* HERO SECTION */
+#home .hero {
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+#home .hero-text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#home .hero-text h1 {
+    font-size: 54px;
+    color: var(--white);
+}
+
+#home .hero-text p {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#home .hero-text a {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+
+#home video {
+    /* position: fixed; */
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#home .video-overlay {
+    width: 100%;
+    position: absolute;
+    height: 1000px;
+    background: rgba(30, 47, 59, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* CLIENTS SECTION */
+/* This is a global CSS property */
+
+
+/* ABOUT US SECTION */
+
+#home .about-us {
+    background: url('../../assets/img/about-us-bg.jpg');
+    background-size: cover;
+    background-position: bottom left;
+    padding: 100px 0;
+}
+
+#home .about-us .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+#home .about-us .grid img.about-us-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: var(--border-radius);
+}
+
+#home .about-us .grid img.about-us-img:nth-child(2) {
+    position: relative;
+    top: -30px;
+    left: -60px;
+}
+
+#home .about-us a {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+
+/* CONSULTATION SECTION */
+#home .consultation {
+    background: var(--secondary);
+    width: calc(100% - 100px);
+    padding: 50px;
+    text-align: center;
+}
+
+#home .consultation .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#home .consultation h3 {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#home .consultation button {
+    margin-top: 24px;
+}
+
+/* COUNTER SECTION */
+#home .counter {
+    background: var(--white);
+    padding: 96px 0;
+}
+
+#home .counter .group {
+    display: flex;
+    justify-content: space-around;
+}
+
+#home .counter .group .item {
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px;
+}
+
+#home .counter .group .item .icon {
+    margin-right: 20px;
+    min-width: 40px;
+    margin-top: 10px;
+}
+
+#home .counter .group .item .title {
+    font-size: 44px;
+    color: var(--secondary);
+    /* color: var(--dark); */
+    font-weight: 900;
+}
+
+#home .counter .group .item .subtitle {
+    font-size: 22px;
+    /* color: var(--gray100); */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#home .counter .group .item .description {
+    font-size: 16px;
+    color: var(--light-gray);
+    font-weight: 400;
+    margin: 12px 0;
+    line-height: var(--line-height);
+}
+
+/* WHY CHOOSE SOLAR SECTION */
+#home .why-choose-solar {
+    background: var(--secondary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#home .why-choose-solar img.family {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* max-height: 550px; */
+}
+
+#home .why-choose-solar .list {
+    margin: 60px 100px;
+    /* height: 100%; */
+}
+
+#home .why-choose-solar .list h2 {
+    color: var(--white);
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+#home .why-choose-solar .list .text {
+    margin-bottom: 24px;
+}
+
+
+
+
+/* SERVICES SECTION */
+#home .services {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--white);
+}
+
+#home .services .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#home .services .service {
+    max-width: 280px;
+    margin: 24px;
+}
+
+#home .services img {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 40px;
+    margin-bottom: 10px;
+}
+
+#home .services h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#home .services .text {
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+/* TESTIMONIALS SECTION */
+/* This is a global CSS property */
+
+/* SAVE WITH SOLAR SECTION */
+#home .save-with-solar {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+#home .save-with-solar .section-header {
+    text-align: center;
+}
+
+#home .save-with-solar .grid {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#home .save-with-solar .savings-row {
+    display: flex;
+}
+
+#home .save-with-solar .slider-container {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#home .slider-container .output {
+    margin: 40px;
+    font-size: 32px;
+    color: var(--light-gray);
+}
+
+
+#home .slider-container .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 500px;
+    height: 3px;
+    background: var(--secondary);
+    outline: none;
+}
+
+#home .slider-container .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 50px;
+    background: url('../../assets/icons/slider-thumb.svg');
+    background-repeat: no-repeat;
+    cursor: grab;
+}
+
+
+
+#home .slider-container .slider::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 50px;
+    background: url('../../assets/icons/slider-thumb.svg');
+    background-repeat: no-repeat;
+    cursor: grab;
+}
+
+
+
+#home .save-with-solar h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#home .save-with-solar .savings {
+    margin-right: 100px;
+}
+
+#home .save-with-solar .amount {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#home .save-with-solar .coverage h4 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#home .save-with-solar .coverage p {
+    margin-bottom: 36px;
+}
+
+
+/* SOLAR PANEL CLEANING */
+#home .solar-panel-cleaning {
+    width: 100%;
+    padding: 100px 0;
+    background: url('../../assets/img/solar-panel-cleaning-bg.jpg');
+    background-size: cover;
+}
+
+
+#home .solar-panel-cleaning h2 {
+    color: var(--white);
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+#home .solar-panel-cleaning .text {
+    color: var(--white);
+    max-width: 700px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+
+#home .solar-panel-cleaning h5 {
+    color: var(--white);
+    max-width: 700px;
+    font-size: 24px;
+    margin-bottom: 80px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+
+/* CONTACT US SECTION */
+#home .contact-us {
+    padding: 100px 0;
+}
+
+#home .contact-us form .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 24px;
+}
+
+#home .contact-us input,
+#home .contact-us textarea {
+    padding: 14px 24px;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--radius);
+    font-size: 15px;
+    margin: 8px;
+    outline: none;
+}
+
+#home .contact-us input:focus,
+#home .contact-us textarea:focus {
+    border: 1px solid var(--secondary);
+}
+
+#home .contact-us input:nth-child(odd),
+#home .contact-us textarea:nth-child(odd) {
+    margin-left: 0;
+}
+
+#home .contact-us input:nth-child(even),
+#home .contact-us textarea:nth-child(odd) {
+    margin-right: 0;
+}
+
+
+#home .contact-us input::placeholder,
+#home .contact-us textarea::placeholder {
+    color: var(--light-gray);
+}
+
+#home .contact-us textarea {
+    resize: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+
+#home form button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #home .why-choose-solar .list {
+        margin: 60px 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* body {
+background: url('poster.jpg');
+background-size: cover;
+} */
+
+    /* HERO SECTION */
+    #home .hero {
+        height: 100vh;
+        margin-top: 0;
+    }
+
+    #home .hero-text h1 {
+        font-size: 32px;
+        width: 70vw;
+    }
+
+    #home .hero-text p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    #home .hero-text button {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+
+    #home video {
+        display: none;
+    }
+
+    #home .video-overlay {
+        background: url('../../assets/img/hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    /* CLIENTS SECTION */
+    /* This is a global CSS property */
+
+
+    /* ABOUT US SECTION */
+    #home .about-us {
+        padding-top: 50px;
+    }
+
+    #home .about-us .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #home .about-us .grid img.about-us-img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: var(--border-radius);
+    }
+    
+    #home .about-us .grid img.about-us-img:nth-child(2) {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 24px;
+    }
+
+
+
+    /* CONSULTATION SECTION */
+    #home .consultation {
+        width: calc(100% - 32px);
+        padding: 50px 16px;
+    }
+
+    #home .consultation h3 {
+        font-size: 28px;
+    }
+
+    /* COUNTER SECTION */
+    #home .counter {
+        padding: 48px 0;
+    }
+
+    #home .counter .group {
+        flex-direction: column;
+    }
+
+    #home .counter .group .item {
+        margin: 10px 40px;
+    }
+
+    #home .counter .group .item .icon {
+        max-width: 30px;
+        margin-top: 10px;
+    }
+
+    #home .counter .group .item .title {
+        font-size: 34px;
+    }
+
+    #home .counter .group .item .subtitle {
+        font-size: 18px;
+    }
+
+    #home .counter .group .item .description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* WHY CHOOSE SOLAR SECTION */
+    #home .why-choose-solar {
+        grid-template-columns: 1fr;
+        max-height: none;
+    }
+
+    #home .why-choose-solar img.family {
+        max-height: 200px;
+    }
+
+    #home .why-choose-solar .list {
+        margin: 60px 32px;
+    }
+
+
+
+    /* SERVICES SECTION */
+    #home .services {
+        padding: 50px 0;
+    }
+
+    #home .services .grid {
+        margin-top: 30px;
+    }
+
+    #home .services .service {
+        margin: 12px;
+    }
+
+    #home .services img {
+        max-width: 40px;
+        max-height: 30px;
+        margin-bottom: 0px;
+    }
+
+
+    /* TESTIMONIALS SECTION */
+    /* This is a global CSS property */
+
+    /* SAVE WITH SOLAR SECTION */
+    #home .save-with-solar {
+        padding: 50px 0;
+    }
+
+    #home .save-with-solar .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #home .save-with-solar .savings-row {
+        flex-direction: column;
+    }
+
+    #home .save-with-solar .savings {
+        margin: 12px 0;
+    }
+
+    #home .save-with-solar .coverage {
+        margin-top: 36px;
+    }
+
+    /* SOLAR PANEL CLEANING */
+    #home .solar-panel-cleaning {
+        padding: 50px 0;
+        background-position: -300px 0px;
+    }
+
+
+    #home .solar-panel-cleaning h5 {
+        margin-bottom: 60px;
+    }
+
+
+    /* CONTACT US SECTION */
+    #home .contact-us {
+        padding: 50px 0;
+    }
+
+    #home .contact-us form .inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #home .contact-us form input,
+    #home .contact-us form textarea {
+        width: calc(100vw - 96px);
+    }
+
+    #home .contact-us input:nth-child(odd),
+    #home .contact-us textarea:nth-child(odd) {
+        margin: 8px 0;
+    }
+
+    #home .contact-us input:nth-child(even),
+    #home .contact-us textarea:nth-child(odd) {
+        margin: 8px 0;
+    }
+
+
+    #home .contact-us input::placeholder,
+    #home .contact-us textarea::placeholder {
+        color: var(--light-gray);
+    }
+
+    #home .contact-us textarea {
+        margin: 8px 0;
+        height: 200px;
+    }
+
+}
+
+/* MEDIA QUERIES */
+/* @media (min-aspect-ratio: 16/9) {
+#home video {
+width: 100%;
+height: auto;
+}
+}
+
+@media (max-aspect-ratio: 16/9) {
+#home video {
+width: auto;
+height: 100%;
+}
+} */

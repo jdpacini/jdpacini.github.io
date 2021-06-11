@@ -1,0 +1,273 @@
+/* HERO SECTION */
+#services .hero {
+    height: 40vh;
+    background: url('../../assets/img/services-hero.jpg');
+    background-size: cover;
+    /* margin-top: 80px; */
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+}
+
+#services .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#services .hero-text h1 {
+    font-size: 48px;
+    color: var(--white);
+}
+
+
+/* ICONS */
+#services .icon {
+    max-width: 34px; 
+    max-height: 34px;
+    margin-right: 14px;
+}
+
+/* TEXT EXPLANATIONS  */
+#services .text {
+   margin-top: 20px;
+   /* font-size: 14px; */
+}
+
+/* HEADER TITLES */
+#services .section-header-title {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* LEFT SIDE SERVICE GRID */
+
+#services .service-grid-left {
+    background: var(--white);
+}
+
+
+#services .service-grid-left .description {
+    padding: 100px 40px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#services .service-grid-left .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+#services .service-grid-left.last-service  {
+   position: relative;
+   z-index: 1;
+   background: transparent;
+}
+
+#services .service-grid-left.last-service .grid {
+    grid-template-columns: 1fr;
+}
+
+#services .service-grid-left button {
+    margin-top: 32px;
+}
+
+
+#services .service-grid-left img.service-grid-left-img {
+    width: calc(100% - 48px);
+    margin: 24px;
+    border-radius: var(--radius);
+}
+
+/* Right SIDE SERVICE GRID */
+
+#services .service-grid-right {
+    background: var(--white);
+    padding-left: 300px;
+}
+
+#services .service-grid-right .description {
+    padding: 100px 80px;
+    padding-top: 50px;
+    padding-right: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+#services .service-grid-right .grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+#services .service-grid-right img.service-grid-right-img {
+    width: 100%;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--radius);
+}
+
+#services .service-grid-right button {
+    margin-top: 32px;
+}
+
+/* FAQ */
+#services .faq {
+    margin-top: 32px;
+}
+
+#services .faq button.faq-link {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    margin: 18px 0;
+    color: var(--secondary);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* HOME SECTION */
+#services .home {
+    padding-top: 100px;
+}
+
+#services .section-header {
+    position: relative;
+    z-index: 1;
+}
+
+
+#services .home img.services-5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    min-height: 1200px;
+    margin-top: -900px;
+    position: relative;
+    z-index: 0;
+}
+
+#services .home .text {
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* WARRANTY SECTION */
+#services .warranty {
+    background: var(--secondary);
+    width: calc(100% - 100px);
+    padding: 50px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+#services .warranty .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#services .warranty h3 {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#services .warranty button {
+    margin-top: 24px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* HERO SECTION */
+    #services .hero {
+        height: 30vh;
+    }
+
+    #services .hero-text h1 {
+        font-size: 32px;
+    }
+
+
+    #services .service-grid-left .description {
+        padding-left: 24px;
+        padding-top: 50px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+    }
+
+    #services .service-grid-left .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    #services .service-grid-left img.service-grid-left-img {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: var(--radius);
+        margin-bottom: 24px;
+    }
+
+    /* Right SIDE SERVICE GRID */
+
+    #services .service-grid-right {
+        padding-left: 0px;
+    }
+
+    #services .service-grid-right .description {
+        padding-left: 24px;
+        padding-top: 50px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+    }
+
+    #services .service-grid-right .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #services .service-grid-right img.service-grid-right-img {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: var(--radius);
+        order: 2;
+        margin-bottom: 24px;
+    }
+
+
+
+    /* HOME SECTION */
+
+    #services .home img.services-5 {
+        min-height: 400px;
+        margin-top: -300px;
+    }
+
+
+
+    /* WARRANTY SECTION */
+    #services .warranty {
+        background: var(--secondary);
+        width: calc(100% - 48px);
+        padding: 50px 24px;
+        text-align: center;
+    }
+
+    #services .warranty .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #services .warranty h3 {
+        font-size: 28px;
+    }
+}

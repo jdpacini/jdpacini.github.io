@@ -1,0 +1,191 @@
+/* HERO SECTION */
+#about .hero {
+    height: 40vh;
+    background: url('../../assets/img/about-hero.jpg');
+    background-size: cover;
+    /* margin-top: 80px; */
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+}
+
+#about .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#about .hero-text h1 {
+    font-size: 48px;
+    color: var(--white);
+}
+
+
+/* WHAT WE OFFER SECTION */
+
+#about .what-we-offer {
+    background: var(--white);
+}
+
+#about .what-we-offer .description {
+    padding: 100px 40px;
+    padding-left: 100px;
+}
+
+#about .what-we-offer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    transition: 0.3s;
+}
+
+#about .what-we-offer a {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+
+#about .what-we-offer img.what-we-offer-img {
+    width: calc(100% - 48px);
+    margin: 24px;
+    border-radius: var(--radius);
+}
+
+/* @media only screen and (max-width: 1000px) {
+    #about .what-we-offer .grid {
+        grid-template-columns: 1.3fr 1fr;
+
+    }
+    #about .what-we-offer img.what-we-offer-img{
+        margin-top: 140px;
+    }
+} */
+/* MEET THE TEAM SECTION */
+
+#about .meet-the-team {
+    background: var(--white);
+}
+
+#about .meet-the-team .description {
+    padding: 100px 80px;
+    padding-right: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#about .meet-the-team .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about .meet-the-team img.meet-the-team-img {
+    width: 100%;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--radius);
+
+}
+
+
+/* OUR VISION SECTION */
+#about .our-vision {
+    padding-top: 100px;
+}
+
+#about .section-header {
+    position: relative;
+    z-index: 1;
+}
+
+
+#about .our-vision img.about-3 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top center;
+    min-height: 1800px;
+    margin-top: -800px;
+    position: relative;
+    z-index: 0;
+}
+
+#about .our-vision .text {
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* TESTIMONIALS SECTION */
+/* This is a global CSS property */
+
+/* CLIENTS SECTION */
+/* This is a global CSS property */
+
+
+@media only screen and (max-width: 1000px) {
+    /* HERO SECTION */
+    #about .hero {
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    #about .hero-text h1 {
+        font-size: 32px;
+    }
+
+
+    /* WHAT WE OFFER SECTION */
+
+    #about .what-we-offer .description {
+        padding: 100px 24px;
+        padding-left: 24px;
+    }
+
+    #about .what-we-offer .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about .what-we-offer img.what-we-offer-img {
+        width: 100%;
+        max-height: 300px;
+        margin: 0;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    /* MEET THE TEAM SECTION */
+
+    #about .meet-the-team .description {
+        padding: 50px 0px;
+    }
+
+    #about .meet-the-team .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about .meet-the-team img.meet-the-team-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* OUR VISION SECTION */
+    #about .our-vision {
+        padding-top: 50px;
+    }
+
+    #about .our-vision .section-header {
+        padding: 0 24px;
+    }
+
+
+    #about .our-vision img.about-3 {
+        min-height: 500px;
+        margin-top: -200px;
+    }
+
+}

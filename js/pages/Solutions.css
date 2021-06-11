@@ -1,0 +1,157 @@
+/* HERO SECTION */
+#solutions .hero {
+    height: 40vh;
+    background: url('../../assets/img/solutions-hero.jpg');
+    background-size: cover;
+    /* margin-top: 80px; */
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#solutions .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#solutions .hero-text h1 {
+    font-size: 48px;
+    color: var(--white);
+}
+
+
+/* ICONS */
+#solutions .icon {
+    max-width: 34px; 
+    max-height: 34px;
+    margin-right: 14px;
+}
+
+/* TEXT EXPLANATIONS  */
+#solutions .text {
+   margin-top: 20px;
+   /* font-size: 14px; */
+}
+
+
+/* SOLAR PANEL CLEANING */
+#solutions .solar-panel-cleaning {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+#solutions .solar-panel-cleaning .description {
+    padding: 0 40px;
+}
+
+#solutions .solar-panel-cleaning .grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+
+#solutions .solar-panel-cleaning button {
+    margin-top: 32px;
+    margin-left: 40px;
+}
+
+
+#solutions .solar-panel-cleaning img.solar-panel-cleaning-img {
+    width: 100%;
+}
+
+#solutions .solar-panel-cleaning .panels img {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border-radius: var(--radius);
+
+}
+
+#solutions .faq {
+    margin: 30px 0;
+    padding: 20px;
+    background: var(--off-white);
+    font-size: 14px;
+    border-radius: var(--radius);
+}
+
+#solutions .faq .question {
+    font-weight: 600;
+}
+#solutions .faq .answer {
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: var(--light-gray);
+    line-height: 1.5;
+}
+
+/* NANOSCOPIC CLEANING SECTION */
+#solutions .nanoscopic {
+    background: url('../../assets/img/solutions-nanoscopic-bg.jpg');
+    background-size: cover;
+    background-position: center left;
+    padding: 100px;
+}
+
+#solutions .nanoscopic .max-width .text {
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* HERO SECTION */
+    #solutions .hero {
+        margin-top: 0;
+        height: 30vh;
+    }
+
+    #solutions .hero-text h1 {
+        font-size: 32px;
+    }
+
+    /* SOLAR PANEL CLEANING */
+
+    #solutions .solar-panel-cleaning .description {
+        padding: 0 24px;
+    }
+
+    #solutions .solar-panel-cleaning .grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    #solutions .solar-panel-cleaning img.solar-panel-cleaning-img {
+        width: 100%;
+    }
+
+    #solutions .solar-panel-cleaning button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+    
+
+    #solutions .faq {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
+    /* NANOSCOPIC CLEANING SECTION */
+    #solutions .nanoscopic {
+        background: url('../../assets/img/solutions-nanoscopic-bg.jpg');
+        background-size: cover;
+        background-position: 30% center;
+        padding: 100px 24px;
+    }
+
+    #solutions .nanoscopic .max-width .text {
+        max-width: 300px;
+    }
+
+}
